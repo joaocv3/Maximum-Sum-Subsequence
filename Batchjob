@@ -1,11 +1,11 @@
-]#!/bin/bash
+#!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=grad08:ppn=16:cluster-Grad,walltime=00:15:00
-#PBS -M andre.marques@edu.pucrs.br
+#PBS -l nodes=grad06:ppn=16:cluster-Grad,walltime=00:15:00
+#PBS -M joao.vieira94@edu.pucrs.br
 #PBS -r n
 #PBS -j oe
-#PBS -d /home/pp12703/trabalhos/Maximum-Sum-Subsequence
+#PBS -d /home/pp12723/t1_relatorio/Maximum-Sum-Subsequence
 #############
 echo Running on host `hostname`
 echo
@@ -20,11 +20,13 @@ echo JOB_ID:
 echo `echo $PBS_JOBID`
 echo ################
 
-./paralelo 1>> ./dados_par.txt 2>> ./dados_par.txt
+./paralelo 1>> ./dados_par_1.txt 2>> ./dados_par_1.txt
+./paralelo 1>> ./dados_par_2.txt 2>> ./dados_par_2.txt
+./paralelo 1>> ./dados_par_3.txt 2>> ./dados_par_3.txt
 
 ############# If running a sequential or openMP program
 
-sleep 1000000000000
+sleep 1000
 
 ################
 

@@ -1,0 +1,46 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad05
+
+Initial Time is Wed May 5 22:59:44 BRT 2021
+
+Directory is /home/pp12723/t1_relatorio/Maximum-Sum-Subsequence
+
+This jobs runs on the following nodes:
+grad05
+
+JOB_ID:
+132058
+
+Final Time is Thu May 6 00:05:54 BRT 2021
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12723 on the batch nodes
+Doing node grad05
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 02:10:50 
+
+ -- MEMORY       = 9688kb 
+
+ -- VIRTUAL MEM  = 38384kb 
+
+ -- ELAPSED TIME = 01:06:11 
+

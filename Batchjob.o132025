@@ -1,0 +1,43 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host grad03
+
+Initial Time is Wed May 5 19:34:57 EDT 2021
+
+Directory is /home/pp12723
+
+This jobs runs on the following nodes:
+grad03
+
+JOB_ID:
+132025
+
+Final Time is Wed May 5 19:51:37 EDT 2021
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12723 on the batch nodes
+Doing node grad03
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:00:00 
+
+ -- MEMORY       = 2212kb 
+
+ -- VIRTUAL MEM  = 17152kb 
+
+ -- ELAPSED TIME = 00:16:40 
+

@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=grad04:ppn=16:cluster-Grad,walltime=01:25:00
+#PBS -l nodes=grad06:ppn=4:cluster-Grad,walltime=01:25:00
 #PBS -M joao.vieira94@edu.pucrs.br
 #PBS -r n
 #PBS -j oe
@@ -20,9 +20,9 @@ echo JOB_ID:
 echo `echo $PBS_JOBID`
 echo ################
 
-./paralelo 1>> ./dados_par_11.txt 2>> ./tempos_par_11.txt
-./paralelo 1>> ./dados_par_22.txt 2>> ./tempos_par_22.txt
-./paralelo 1>> ./dados_par_33.txt 2>> ./tempos_par_33.txt
+./paralelo 1> ./dados_par_1_4t.txt 2> ./tempos_par_1_4t.txt
+./paralelo 1> ./dados_par_2_4t.txt 2> ./tempos_par_2_4t.txt
+./paralelo 1> ./dados_par_3_4t.txt 2> ./tempos_par_3_4t.txt
 
 ############# If running a sequential or openMP program
 

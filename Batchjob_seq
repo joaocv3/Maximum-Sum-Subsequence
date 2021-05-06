@@ -1,0 +1,32 @@
+#!/bin/bash
+#PBS -m abe
+#PBS -V
+#PBS -l nodes=grad05:ppn=1:cluster-Grad,walltime=01:25:00
+#PBS -M joao.vieira94@edu.pucrs.br
+#PBS -r n
+#PBS -j oe
+#PBS -d /home/pp12723/t1_relatorio/Maximum-Sum-Subsequence
+#############
+echo Running on host `hostname`
+echo
+echo Initial Time is `date`
+echo
+echo Directory is `pwd`
+echo
+echo This jobs runs on the following nodes:
+echo `cat $PBS_NODEFILE | uniq`
+echo
+echo JOB_ID:
+echo `echo $PBS_JOBID`
+echo ################
+
+./sequencial 1> dados_seq1.txt 2> tempos_seq1.txt
+./sequencial 1> dados_seq2.txt 2> tempos_seq2.txt
+
+############# If running a sequential or openMP program
+
+
+################
+
+echo Final Time is `date`
+
